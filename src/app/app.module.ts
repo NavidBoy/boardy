@@ -4,23 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
-import { ColummnComponent } from './colummn/colummn.component';
-import { AddColumnComponent } from './add-column/add-column.component';
+import { ColumnComponent } from './board/column/column.component';
+import { AddColumnComponent } from './board/add-column/add-column.component';
 import { AddCardComponent } from './board/column/add-card/add-card.component';
 import { CardComponent } from './board/column/card/card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoardComponent,
-    ColummnComponent,
+    ColumnComponent,
     AddColumnComponent,
     AddCardComponent,
     CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

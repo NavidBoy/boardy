@@ -1,1 +1,6 @@
 <p>add-column works!</p>
+<form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+    <label>name:</label>
+    <input type="text" formControlName="name">
+    <button type="submit" [disabled]="!nameForm.valid" (click)="onSubmit()">Submit</button>
+</form>
