@@ -297,5 +297,8 @@
     }
   }
 </style>
-  <app-add-column></app-add-column>
+  <app-add-column (info)="createColumn($event)" class='.content'></app-add-column>
+  <div class="AddColumnComponent" *ngFor="let name of tabcolumn">{{ name }}
+  <app-column [columnName]="name"></app-column>
+  </div>
 <router-outlet></router-outlet>

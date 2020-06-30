@@ -1,1 +1,7 @@
-<p>colummn works!</p>
+<!--<p>{{ columnName }}</p>-->
+<div>
+    <app-add-card (info)="addCard($event)"></app-add-card>
+    <div class="AddCardComponent" *ngFor="let name of tabCards">{{ name }}
+        <app-card [cardName]="name"></app-card>
+        </div>
+</div>

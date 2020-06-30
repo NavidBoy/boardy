@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'boardy';
+  tabcolumn : String[] = []
+  createColumn(name:String){
+    console.warn(name);
+    this.tabcolumn.push(name);
+
+  }
 }

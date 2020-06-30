@@ -1,1 +1,5 @@
-<p>add-card works!</p>
+<form [formGroup]="cardNameForm">
+    <label>Card name:</label>
+    <input type="text" formControlName="name">
+    <button type="submit" [disabled]="!cardNameForm.valid" (click)="onSubmit()">Submit</button>
+</form>

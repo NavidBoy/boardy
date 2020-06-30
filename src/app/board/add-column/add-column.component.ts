@@ -20,7 +20,7 @@ export class AddColumnComponent implements OnInit {
   }
 
   onSubmit() {
-    
+    //console.warn(this.nameForm.get("name").value);
     this.info.emit(this.nameForm.get("name").value);
   }
 
