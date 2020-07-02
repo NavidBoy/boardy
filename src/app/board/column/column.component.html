@@ -2,6 +2,6 @@
 <div>
     <app-add-card (info)="addCard($event)"></app-add-card>
     <div class="AddCardComponent" *ngFor="let name of tabCards">{{ name }}
-        <app-card [cardName]="name"></app-card>
+        <app-card [cardName]="name" class=".AddCardComponent"></app-card>
         </div>
 </div>
